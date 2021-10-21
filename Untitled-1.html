@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+            *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+        main{
+            min-height: 100vh;
+            background:linear-gradient(to right top,#65dfc9,#6cdbeb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .glass{
+            background: white;
+            max-height: 80vh;
+            width: 60vw;
+            background:linear-gradient(to right bottom,rgba(255,255,255,07),rgba(255,255,255,0.3));
+            border-radius: 20px;
+            z-index: 2;
+            backdrop-filter: blur(10px);
+            display: flex;
+           
+
+
+        }
+        .cercle1,.cercle2{
+            background: white;
+            width: 200px;
+            height: 200px;
+            background:linear-gradient(to right bottom,rgba(255,255,255,07),rgba(255,255,255,0.3));
+            border-radius: 50%;
+            position: absolute;
+         
+        }
+        .cercle1{
+            bottom:5%;
+            left:15%;
+        }
+        .cercle2{
+           top:5%;
+            right:15%;
+
+        }
+        .dashboard{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background:linear-gradient(to right bottom,rgba(255,255,255,07),rgba(255,255,255,0.3));
+            border-radius: 10px;
+
+        }
+        .
+        .link{
+            display: flex;
+            margin: 2rem 0rem;
+            padding: 1rem 5rem;
+            align-items:center;
+            text-align: center;
+        }
+        .link h2{
+            padding:0rem 2rem;
+        }
+        .pro{
+            background:linear-gradient(to right top,#65dfc9,#6cdbeb);
+            border-radius: 2rem;
+            color:white;
+            padding: 15px;
+            display: flex;
+            position: relative;
+        }
+        .pro img{
+            position: absolute;
+            top:-10%;
+            right:10%;
+
+        }
+        .pro h2{
+            width: 40%;
+            color: white;
+            font-weight: 600;
+        }
+        h1{ color:#426696;
+            font-weight: 600;
+            font-size: 3rem;
+            opacity: 0.8;
+        }
+        h2,p{ color:#658ec6;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+        h3{ color:#426696;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+        /*games section*/
+        .status{
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            height: 10%;
+            
+
+        }
+        .status input{
+            background:linear-gradient(to right bottom,rgba(255,255,255,07),rgba(255,255,255,0.3));
+            border: none;
+            width: 50%;
+            padding: 0.5rem;
+            border-radius: 10px;
+
+        }
+        .games{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 1rem;
+            overflow: auto;
+           
+        }
+        
+        .card{
+            display: flex;
+            background:linear-gradient(to left top,rgba(255,255,255,1),rgba(255,255,255,0.8));
+            border-radius:10px ;
+            margin: 2rem 0rem;
+            padding: 2rem;
+            box-shadow: 6px 6px 20px regba(122,122,122,0.3;
+        }
+        .cards{
+            overflow: auto;
+
+            
+        }
+        .all{
+            flex:2;
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="glass"> 
+            <div class="dashboard">
+                <div class="user">
+                    <img src="" alt="">
+                    <h3>Marwen Ayedi</h3>
+                    <p>Pro member</p></div>
+                    <div class="links">
+                        <div class="link"><img src="" alt=""><h2>twitch</h2></div>
+                        <div class="link"><img src="" alt=""><h2>games</h2></div>
+                        <div class="link"><img src="" alt=""><h2>new</h2></div>
+                        <div class="link"><img src="" alt=""><h2>library</h2></div>
+                    </div>
+                    <div class="pro"><h2>join pro for free games</h2><img src="" alt=""></div>
+                    </div>
+                     <div class="all">
+                     <div class="status">
+                        <h1>active games</h1>
+                        <input type="text" placeholder="researche"/>
+                    </div>
+                <div class="games">
+                   
+                    <div class="cards">
+                        <div class="card"><img src="" alt="">
+                            <div class="card-info">
+                                <h2>rappelz</h2>
+                                <p>PC version</p>
+                                <div class="progress"></div>
+                            </div>
+                            <h2 class="percentage">60%</h2>
+                        </div>
+                        <div class="card"><img src="" alt="">
+                            <div class="card-info">
+                                <h2>Valourant</h2>
+                                <p>PC version</p>
+                                <div class="progress"></div>
+                            </div>
+                            <h2 class="percentage">60%</h2>
+                        </div>
+                        <div class="card"><img src="" alt="">
+                            <div class="card-info">
+                                <h2>brawlhalla</h2>
+                                <p>PC version</p>
+                                <div class="progress"></div>
+                            </div>
+                            <h2 class="percentage">60%</h2>
+                        </div>
+                        <div class="card"><img src="" alt="">
+                            <div class="card-info">
+                                <h2>gta V</h2>
+                                <p>PC version</p>
+                                <div class="progress"></div>
+                            </div>
+                            <h2 class="percentage">60%</h2>
+                        </div>
+                        <div class="card"><img src="" alt="">
+                            <div class="card-info">
+                                <h2>rocket league</h2>
+                                <p>PC version</p>
+                                <div class="progress"></div>
+                            </div>
+                            <h2 class="percentage">60%</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <div class="cercle1"></div>
+    <div class="cercle2"></div>
+</body>
+</html>
